@@ -1,0 +1,1 @@
+This project  has a fluid collapsible navbar design that will work on both mobile and desktop. The bootstrap grid is used to make sure mobile first. The nav bar will initially hide in mobile version, the user need to click the button to seee the navigation.

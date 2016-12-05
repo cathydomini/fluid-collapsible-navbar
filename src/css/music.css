@@ -1,0 +1,242 @@
+        @font-face {
+            font-family: musicFont;
+            src: url(fonts/sanfranciscodisplay-regular-webfont.woff);
+        }
+        html {
+            font-family: musicFont,"Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+        }
+        
+        body {
+            font-size: 100%;
+            line-height: 1.6875;
+            margin: 0;
+            background-color:#131919;;
+            color:#FFF;
+        }
+
+        a{
+            color:#FFF;
+        }
+        .mainWrapper{
+            padding: 50px 0px 50px;
+            background-color:#131919;
+            
+        }
+
+         .navbar{
+            text-align: center;
+         }
+        .sidenav{
+            padding-left:3%;
+         }
+
+        .sidenav ul{
+            padding:0px;
+            margin:0px;
+          
+          }
+         .sidenav ul li{
+            list-style: none;
+            font-size:12px;  
+            white-space: nowrap;
+            color:#f2f2f2;
+         }
+         
+         .sidenav ul li a{             
+             color:#ffff00;
+             text-decoration: none;            
+          }
+
+          .sidenav ul li div{
+            display:inline-block;
+            vertical-align:middle;
+            padding-left:2%;
+          }
+
+         .sidenav li:not(:last-child) {
+                margin-bottom: 10px;
+            }
+
+          .sidenav h1{
+            font-size:14px;
+            margin:0px 0px 15px 8px;
+          }  
+          #see{
+            display:none;
+          }
+          
+
+ /* Remove margins and padding from the list, and add a black background color */
+        
+        ul.topnav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            font-size:14px;
+            
+        }
+       
+        
+        ul.topnav li {
+           /*float: left; */
+           display:inline-block;
+        }
+        /* Style the links inside the list items */
+        
+        ul.topnav li a {
+            display: inline-block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: 0.3s;
+            
+        }
+        /* Change background color of links on hover */
+        
+        ul.topnav li a:hover {
+            color: #555;
+        }
+        /* Hide the list item that contains the link that should open and close the topnav on small screens */
+        
+        ul.topnav li.icon {
+            display: none;
+        }
+
+        .searchicon{
+            -webkit-transform: rotate(320deg); 
+            -moz-transform: rotate(320deg); 
+            -o-transform: rotate(320deg);
+            transform: rotate(320deg);
+            color:#fff;
+            display:inline-block;
+            font-weight:bolder;
+            font-family: Hursheys;
+            font-size:1.5em;
+            margin-top:-9px;
+        }
+       
+       footer{
+         text-align: center;
+         color:#f2f2f2;
+       }
+
+       footer p{
+         display:inline-block;
+       }
+     
+       footer a{
+            white-space: nowrap;
+            color:#ffff00;           
+         }
+ 
+     footer p:not(:last-child) {
+            margin-right: 10px;
+        }
+      
+      .image {
+          margin-bottom:20px; 
+          position:relative;
+          
+       }
+
+       .image h2{
+            position: absolute;
+            top: 130px;
+            left:10px;
+            font-size:14px;
+            font-weight: normal;
+       }
+       .image h3{
+            position: absolute;
+            top: 150px;
+            left:10px;
+            font-size:12px;
+            font-weight: normal;
+       }
+
+       /* the vertical line between main cotent and right side bar*/
+        @media screen and (min-width: 961px) {
+            .maincontent {               
+                border-right: 1px solid #bbbec1;                                
+            }
+           
+           
+            
+        }
+
+
+ /* When the screen is less than 680 pixels wide. Show the list item that contains the link to open and close the topnav (li.icon) */
+        
+        @media screen and (max-width:680px) {            
+            
+            ul.topnav li:not(:last-child) {
+                display: none;
+            }
+            ul.topnav li.icon {
+                float: left;
+                display: inline-block;
+            }
+            ul.topnav li.icon {
+                float: left;
+                display: inline-block;
+            }
+            
+            .mainWrapper{
+              padding: 10px 0px 10px;                
+            }
+           
+           /* show see more(less) button base on the collapsible icon*/
+           #see {
+                 display:block;
+                 padding-top:10px;
+                 padding-bottom:10px;
+                 background: #ffff00;
+                 color:#000;
+                 width: 100px;
+                 border-radius: 25px;
+                 text-align: center;
+                 top:20px;
+                 white-space: nowrap;
+                 margin:auto;
+                 
+            }
+             #see  a{
+                 color:#000;
+                 text-decoration: none;
+             }
+
+
+            #see{
+                margin-top:20px;
+                margin-bottom:20px;
+            }
+        /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+        
+       
+            ul.topnav.responsive {
+                position: relative;
+            }
+         
+            ul.topnav.responsive li {
+                float: none;
+                display: inline;
+            }
+            ul.topnav.responsive li a {
+                display: block;
+                text-align: left;
+            }
+            
+             ul.topnav li .searchicon{
+                display: block;
+                position:absolute;
+                left: 90%;
+                top:0;
+            }
+
+             footer p{
+                 display:block;
+            }
+        }
